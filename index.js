@@ -1,4 +1,6 @@
+'use strict';
 var express = require('express');
+var service = require('./service');
 var app = express();
 
 app.get('/', function (req, res) {

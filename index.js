@@ -8,10 +8,12 @@ app.get('/data', function (req, res) {
   res.send(service.getData());
 });
 
+// Add a comment to describe this route
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
 
+// Add a comment to describe this route
 app.get('/some-crazy-route', function (req, res) {
   response.send('This route is crazy');
 });

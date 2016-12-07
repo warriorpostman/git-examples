@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 
 // Add a comment to describe this route
 app.get('/some-crazy-route', function (req, res) {
-  response.send('This route is crazy');
+  res.send('This route is crazy');
 });
 
 app.get('/wacky-route', function (req, res) {

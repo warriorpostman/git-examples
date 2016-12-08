@@ -4,6 +4,8 @@ var jwt = require('express-jwt');
 
 var service = require('./services/get-data');
 
+app.use(express.static('public'));
+
 app.get('/data', function (req, res) {
   res.send(service.getData());
 });
@@ -11,6 +13,8 @@ app.get('/data', function (req, res) {
 app.get('/', function (req, res) {
   res.send('Hello World!');
 });
+
+
 
 app.get('/secure', 
   jwt({ 

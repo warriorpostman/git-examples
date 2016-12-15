@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 var service = require('./services/get-data');
 
+// Adding some code that's just wrong
+app.post(');
+
 app.get('/data', function (req, res) {
   res.send(service.getData());
 });
